@@ -8,8 +8,10 @@ karena itu sifatny credential, jadi lu semua buat sendiri dalam bentuk file js
 
 Cara jalanin aplikasi ini :
 
--npm install
+```
+npm install
 
--npm start
+npm start
+```
 
 Done :)
