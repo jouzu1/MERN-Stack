@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"mern","dependencies":{"body-parser":{"version":"1.19.0"},"dotenv":{"version":"8.2.0"},"express":{"version":"4.17.1"},"mongoose":{"version":"5.12.5"},"nodemon":{"version":"2.0.7"}}}
