@@ -1,4 +1,4 @@
-#MERN Stack
+MERN Stack
 ---
 
 Hallo semuanya, ini adalah MERN Stack gw
