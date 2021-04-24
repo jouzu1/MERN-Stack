@@ -52,6 +52,7 @@ app.use(cors());
 
 //endpoint untuk REST API
 app.use('/api/',routes);
+// app.use('/api/',router.use('/user',user);)
 
 
 //Cara menggunakan port yang kita mau, bisa diganti 3030, 8080 
