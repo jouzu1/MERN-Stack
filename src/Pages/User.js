@@ -6,16 +6,19 @@ import axios from 'axios';
 
 function User() {
     const [data, setData] = useState({});
+    const [alert, setAlert] = useState(false);
 
     const addUser = (e) => {
         e.preventDefault();
         axios.post(`${API_URL}/user`, data).then(response => {
-            console.log(response.data)
+            console.log(response.data);
+            setAlert(true);
         }).catch(err => console.log(err))
     }
     return (
         <div className="row justify-content-center mt-5">
             <div className="col-md-5">
+                {alert ? (<div className='alert alert-success'>Data Berhasil Ditambahkan</div>):null}
                 <form onSubmit={(e) => addUser(e)}>
                     <div className="card">
                         <div className="card-body">
