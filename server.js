@@ -48,7 +48,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 //App menggunakan CORS
-app.user(cors());
+app.use(cors());
 
 //endpoint untuk REST API
 app.use('/api/',routes);
