@@ -4,7 +4,10 @@ import React from 'react';
 const Home = () => {
     return (
         <div>
-            lorem ipsum dolor sit amet, consectetur adip
+            <h1><center>Fullstack Menggunakan MERN</center></h1>
+            <br></br>
+            <h4>Setelah fullstacknya jadi, tolong review code dari backend sampe frontend</h4>
+            
         </div>
     )
 }

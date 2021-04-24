@@ -6,7 +6,7 @@ const NavigationBar = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Navbar.Brand >
-                <Link className="navbar-brand" to="/lorem">MERN Stack</Link>
+                <Link className="navbar-brand">MERN Stack</Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

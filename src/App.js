@@ -12,7 +12,7 @@ function App() {
       <Router>
         <NavigationBar />
         <Layout>
-          <Route exact path="/lorem" component={Home}></Route>
+          <Route exact path="/" component={Home}></Route>
           <Route exact path="/user" component={User}></Route>
           <Route exact path="/about" component={About}></Route>
         </Layout>

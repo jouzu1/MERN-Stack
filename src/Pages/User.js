@@ -1,11 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, {useState,useEffect}from 'react';
+import {API_URL} from '../Config/Config';
+import axios from 'axios';
 
-const User = () => {
+
+
+function User(){
+    const [data,setData] = useState({}); 
+
+    const addUser = () => {
+        axios.post(`${API_URL}/url`,data).then(response => {
+            console.log(response.data)
+        }).catch(err => console.log(err))
+    }
     return (
         <div className="row justify-content-center mt-5">
             <div className="col-md-5">
-                <form>
+                <form onSubmit={(e)=> addUser(e)}>
                     <div className="card">
                         <div className="card-body">
                             <div className="form-group">
