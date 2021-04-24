@@ -30,6 +30,9 @@ const app = express();
 // routes berisi endpoint untuk mWebservice REST API
 const routes = require('./routes/index')
 
+//Tambahin CORS
+const cors = require('cors')
+
 
 //Teknikal untuk menyambungkan ke DB menggunakan string koneksi dari const db
 //Terdapat pesan untuk apabila berhasil tersambung ke database
@@ -43,6 +46,9 @@ mongoose.connect(db,{
 //2 line code ini untuk ngeparsin data JSON untuk post dan get
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
+
+//App menggunakan CORS
+app.user(cors());
 
 //endpoint untuk REST API
 app.use('/api/',routes);
